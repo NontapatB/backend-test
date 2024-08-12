@@ -65,7 +65,7 @@ This project marks my first attempt at using NestJS with TypeScript. I am still 
 
     The server should now be running at `http://localhost:3000`.
 
-## API Endpoints (Aleady Test By using Postman)
+## API Endpoints (Already Test By using Postman)
 
 ### Authentication
 
