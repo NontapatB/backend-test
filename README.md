@@ -44,9 +44,18 @@ This project marks my first attempt at using NestJS with TypeScript. I am still 
     JWT_SECRET=your_jwt_secret
     ```
 
-    Replace `your_mongodb_connection_uri` with your MongoDB connection string and `your_jwt_secret` with your desired JWT secret key or you can use my default setting.
+    Replace `your_mongodb_connection_uri` with your MongoDB connection string and `your_jwt_secret` with your desired JWT secret key or you can change settings in configuration.ts file
+   
+    ```plaintext
+    database: {
+      uri: process.env.DATABASE_URI || 'your_mongodb_connection_uri',
+    },
+    jwt: {
+      secret: process.env.JWT_SECRET || 'your_jwt_secret',
+    },
+    ``` 
 
-4. **Run the application**:
+5. **Run the application**:
     ```bash
     npm run start:dev
     ```
